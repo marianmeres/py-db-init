@@ -80,6 +80,7 @@ def get_schema(schema_dir: str, tbl_prefix: str = ""):
 
         deps = set()
         for _name in req_rgx.findall(sql):
+            # normalize dep name with extension as extension is not required
             if _name[-4:].lower() != ".sql":
                 _name += ".sql"
             deps.add(_name)

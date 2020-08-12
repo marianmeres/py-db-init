@@ -46,7 +46,7 @@ def main():
         # are you sure?
         if not _args.yes and not _args.dry:
             yn = input(
-                f"\nThis will recreate sql schema in "
+                f"\nThis will execute sql in "
                 f"postgres://{db_cfg.DB_HOST}:{db_cfg.DB_PORT}/{db_cfg.DB_DATABASE} ..."
                 "\nAre you sure? [y/n]\n"
             ).strip()
@@ -74,7 +74,7 @@ def main():
             print("SQL exec error: " + str(e))
             sys.exit(2)
 
-        _logger("OK, done")
+        _logger("\n  ✓ Finished OK!\n")
         sys.exit(0)
 
     except KeyboardInterrupt:
