@@ -6,7 +6,7 @@ import sys
 
 from dotenv import load_dotenv
 
-from .db_utils import db_execute, get_db_config, set_db_config
+from .db_utils import db_execute, set_db_config
 from .schema_utils import get_schema
 from .args_utils import create_arg_parser
 

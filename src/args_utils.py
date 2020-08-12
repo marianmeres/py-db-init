@@ -1,7 +1,6 @@
 import argparse
 import os
-import sys
-from os.path import abspath, dirname, join, abspath
+from os.path import join
 
 
 def create_arg_parser():
