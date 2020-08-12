@@ -2,6 +2,7 @@
 -- ## require __extensions__
 -- ## require __functions__
 
+
 DROP TABLE IF EXISTS "TBLPREFIX____user" CASCADE;
 
 CREATE TABLE "TBLPREFIX____user"(

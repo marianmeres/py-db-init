@@ -1,4 +1,5 @@
 
+
 DROP TABLE IF EXISTS "TBLPREFIX____setting" CASCADE;
 
 CREATE TABLE "TBLPREFIX____setting" (

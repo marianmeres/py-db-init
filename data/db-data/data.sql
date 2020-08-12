@@ -1,0 +1,1 @@
+insert into "TBLPREFIX____setting" (id, value) values ('foo', 'null')
