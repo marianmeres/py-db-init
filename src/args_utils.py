@@ -15,9 +15,9 @@ def create_arg_parser():
 
     parser.add_argument(
         "--indir",
-        action='append',
+        action="append",
         required=True,
-        help="Source directory containing sql files. Multiple --indir args are allowed."
+        help="Source directory containing sql files. Multiple --indir args are allowed.",
     )
 
     # support for optional path, fallback to sane default

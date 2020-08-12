@@ -56,7 +56,7 @@ def main():
 
         # collect schema
         try:
-            sql = ''
+            sql = ""
             for indir in _args.indir:
                 sql += get_schema(indir, os.getenv("TBLPREFIX", ""))
         except FileNotFoundError as e:
