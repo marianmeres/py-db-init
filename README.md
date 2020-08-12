@@ -1,15 +1,15 @@
 # db-init.py
 
-Python study playground doing some real work.
+Python study playground, doing some real work.
 
 ## Installation
 
-1. `cp .env.example.env .env`
-2. `vim .env` (edit db credentials as needed)
-3. `pip install -r requirements.txt`
+1. `pip install -r requirements.txt`
+2. `cp .env.example.env .env`
+3. `vim .env` (edit db credentials as needed)
+4. `python db-init.py --help` 
 
 ## Usage
-Type `python db-init.py --help` for:
 
 ```
 usage: db-init.py [-h] --indir INDIR [--env ENV] [--force] [--yes] [--silent] [--dry]

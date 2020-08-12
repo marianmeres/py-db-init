@@ -6,9 +6,9 @@ import sys
 
 from dotenv import load_dotenv
 
+from .args_utils import create_arg_parser
 from .db_utils import db_execute, set_db_config
 from .schema_utils import get_schema
-from .args_utils import create_arg_parser
 
 
 def create_logger(is_silent):
@@ -51,7 +51,7 @@ def main():
                 "\nAre you sure? [y/n]\n"
             ).strip()
             if not re.match(re.compile("^y(es)?$", re.IGNORECASE), yn):
-                _logger("Aborted")
+                _logger("\n    Aborted!\n")
                 sys.exit(0)
 
         # collect schema
