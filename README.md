@@ -4,7 +4,9 @@ Python study playground doing some real work.
 
 ## Installation
 
-`pip install -r requirements.txt`
+1. `cp .env.example.env .env`
+2. `vim .env` (edit db credentials as needed)
+3. `pip install -r requirements.txt`
 
 ## Usage
 Type `python db-init.py --help` for:
@@ -18,7 +20,7 @@ Utility to collect and execute sql files from a given directory. Execution of fi
 optional arguments:
   -h, --help     show this help message and exit
   --indir INDIR  Source directory containing sql files. Multiple --indir args is allowed.
-  --env ENV      Optional path to .env file (default: /mnt/c/Users/MM/projects/nettle/py-db-init/.env)
+  --env ENV      Optional path to .env file (default: ./.env)
   --force        Will run even on production env (detected via PYTHON_ENV)
   --yes          Do not ask for confirmation and assume "yes"
   --silent       Do not produce stdout output
