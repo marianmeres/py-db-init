@@ -4,10 +4,12 @@ Python study playground, doing some real work.
 
 ## Installation
 
+Make sure you have python 3.6+ available on your system.
+
 1. `pip install -r requirements.txt`
 2. `cp .env.example.env .env`
 3. `vim .env` (edit db credentials as needed)
-4. `python db-init.py --help` 
+4. `python3 db-init.py --help` 
 
 ## Usage
 
