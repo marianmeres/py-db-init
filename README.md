@@ -1,5 +1,6 @@
 # db-init.py
 
+Python study playground doing some real work.
 
 ## Installation
 
